@@ -2,74 +2,145 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cadastrar Associados</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5579/5579570.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <link rel="stylesheet" href="/public/css/empresa.css">
 </head>
 
 <body>
-  <a href="/listaempresas"> Empresas cadastrados</a>
-
-
-  <body class="bg-light">
-
-    <div class="container">
-      <div class="py-5 text-center">
-        <img src="/public/img/girassol.png" alt="girassol" class="center" width="120px" height="100px">
-        <img class="d-block mx-auto mb-4" src="/public/girassol.png" alt="" width="72" height="72">
-        <h2>Cadastro de Empresas</h2>
-        <p class="lead">Below is an example form built entirely with Bootstrap's form controls. Each required form group
-          has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #f9ce07;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="https://cdn-icons-png.flaticon.com/512/5579/5579570.png"
+            width="50"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/catalogoactionfigures">Action Figures</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/catalogobrinquedos">Brinquedos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/catalogojogosdemesa">Jogos de Mesa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/catalogogiftcard">Gift Cards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/listadefuncionarios">Funcionário</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/listaempresas">Empresas</a>
+            </li>
+          </ul>
+          <form class="d-flex" action="/buscar/empresa/" method="post">
+            <input class="form-control me-2" type="search" name="busca" id="busca">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
       </div>
-      <form action="empresa/insertEmpresa" method="post">
-        <div class="mb-3">
-          <label for="Nome" class="form-label">Nome</label>
-          <div class="input-group">
-            <input type="text" class="form-control" name="nome" id="nome" required="">
-            <div class="invalid-feedback" style="width: 100%;">
-              Preencha seu Nome
+    </nav>
+  </header>
+  <main>
+    <a href="/listaempresas"> Empresas cadastrados</a>
+
+    <body class="bg-light">
+
+      <div class="container">
+        <div class="py-5 text-center">
+          <img src="/public/img/girassol.png" alt="girassol" class="center" width="120px" height="100px">
+          <img class="d-block mx-auto mb-4" src="/public/girassol.png" alt="" width="72" height="72">
+          <h2>Cadastro de Empresas</h2>
+          <p class="lead">Below is an example form built entirely with Bootstrap's form controls. Each required form
+            group
+            has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+        </div>
+        <form action="empresa/insertEmpresa" method="post">
+          <div class="mb-3">
+            <label for="Nome" class="form-label">Nome</label>
+            <div class="input-group">
+              <input type="text" class="form-control" name="nome" id="nome" required="">
+              <div class="invalid-feedback" style="width: 100%;">
+                Preencha seu Nome
+              </div>
             </div>
           </div>
-        </div>
-        
-        <div class="mb-3">
-          <label for="cnpj">CNPJ</label>
-          <div class="input-group">
-            <input type="text" type="number" class="form-control" name="cnpj" id="cnpj" required="">
-            <div class="invalid-feedback" style="width: 100%;">
-              Digite o cnpj.
+
+          <div class="mb-3">
+            <label for="cnpj">CNPJ</label>
+            <div class="input-group">
+              <input type="text" type="number" class="form-control" name="cnpj" id="cnpj" required="">
+              <div class="invalid-feedback" style="width: 100%;">
+                Digite o cnpj.
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="mb-3">
-          <label for="email">Email <span class="text-muted"></span></label>
-          <input type="email" class="form-control" name="email" id="email">
-          <div class="invalid-feedback">
-            Digite o e-mail.
+          <div class="mb-3">
+            <label for="email">Email <span class="text-muted"></span></label>
+            <input type="email" class="form-control" name="email" id="email">
+            <div class="invalid-feedback">
+              Digite o e-mail.
+            </div>
           </div>
-        </div>
 
-        <div class="mb-3">
-          <label for="telefone">Telefone <span class="text-muted"></span></label>
-          <input type="telefone" class="form-control" name="telefone" id="email">
-          <div class="invalid-feedback">
-            Digite o e-mail.
+          <div class="mb-3">
+            <label for="telefone">Telefone <span class="text-muted"></span></label>
+            <input type="telefone" class="form-control" name="telefone" id="email">
+            <div class="invalid-feedback">
+              Digite o e-mail.
+            </div>
           </div>
-        </div>
 
-        <div class="mb-3">
-          <label for="local">Endereço</label>
-          <input type="text" class="form-control" id="local" name="local" required="">
-          <div class="invalid-feedback">
-            Digite o endereço.
+          <div class="mb-3">
+            <label for="local">Endereço</label>
+            <input type="text" class="form-control" id="local" name="local" required="">
+            <div class="invalid-feedback">
+              Digite o endereço.
+            </div>
           </div>
-        </div>
-        <button type="submit" class="btn btn-primary">Cadastrar</button>
+          <button type="submit" class="btn btn-primary">Cadastrar</button>
 
+      </div>
+      </form>
+  </main>
+  <footer>
+    <div class="footergira">
+      <a href="/">
+        <div className='footerlogo'>
+          <img src="https://cdn-icons-png.flaticon.com/512/5579/5579570.png" width="110" height="100" />
+        </div>
+      </a>
+      <div className='redesocias'>
+        <h2>Nossas redes sociais</h2>
+        <a href="https://web.facebook.com">
+          <p>Facebook</p>
+        </a>
+        <a href="https://www.instagram.com">
+          <p>Instagram</p>
+        </a>
+        <a href="https://twitter.co ">
+          <p>Twitter</p>
+        </a>
+      </div>
+      <div className='contatos'>
+        <h2>Contatos</h2>
+        <p>(11) 4002-8922</p>
+        <p>(11) 4002-8922</p>
+      </div>
     </div>
-    </form>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/masking-input.js" data-autoinit="true"></script>
-
-
-  </body>
+  </footer>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/masking-input.js" data-autoinit="true"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>

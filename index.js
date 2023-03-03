@@ -65,7 +65,7 @@ app.get("/catalogobrinquedos", (req, res) => {
 });
 
 // Função de buscar, que leva para o brinquedobuscar.hbs
-app.post("/resultado/brinquedo/", (req, res) => {
+app.post("/buscar/brinquedo/", (req, res) => {
   const { busca } = req.body;
 
   const sql = `SELECT * FROM brinquedos WHERE id = '${busca}' OR nome LIKE '%${busca}%'`;
@@ -213,7 +213,7 @@ app.get("/listadefuncionarios", (req, res) => {
 });
 
 // Função de buscar, que leva para o buscarfuncionario.handlebars
-app.post("/resultado/funcionario/", (req, res) => {
+app.post("/buscar/funcionario/", (req, res) => {
   const cpf = req.body.cpf;
 
   const sql = `SELECT * FROM funcionario WHERE cpf = ${cpf}`;
@@ -359,11 +359,11 @@ app.get("/catalogojogosdemesa", (req, res) => {
   });
 });
 
-// Função de buscar, que leva para o buscarjogodemesa.handlebarsapp.post("/resultado/brinquedo/", (req, res) => {
-  app.post("/resultado/jogosdemesa/", (req, res) => {  
-const { busca } = req.body;
+// Função de buscar, que leva para o buscarjogodemesa.handlebars
+app.post("/buscar/jogosdemesa/", (req, res) => {
+  const id = req.body.id;
 
-  const sql = `SELECT * FROM jogodemesa WHERE id = '${busca}' OR nome LIKE '%${busca}%'`;
+  const sql = `SELECT * FROM jogodemesa WHERE id = ${id}`;
 
   conn.query(sql, function (err, data) {
     if (err) {
@@ -375,8 +375,6 @@ const { busca } = req.body;
     res.render("jogosdemesabuscar", { layout: false, buscarjogodemesa });
   });
 });
-
-
 
 //---------------------------------------- jogosdemesabuscar.hbs / jogodemesaid.hbs ------------------------------------------//
 // Página onde consulta as informações por cliente por ID

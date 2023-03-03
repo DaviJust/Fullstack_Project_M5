@@ -359,11 +359,11 @@ app.get("/catalogojogosdemesa", (req, res) => {
   });
 });
 
-// Função de buscar, que leva para o buscarjogodemesa.handlebars
-app.post("/resultado/jogosdemesa/", (req, res) => {
-  const id = req.body.id;
+// Função de buscar, que leva para o buscarjogodemesa.handlebarsapp.post("/resultado/brinquedo/", (req, res) => {
+  app.post("/resultado/jogosdemesa/", (req, res) => {  
+const { busca } = req.body;
 
-  const sql = `SELECT * FROM jogodemesa WHERE id = ${id}`;
+  const sql = `SELECT * FROM jogodemesa WHERE id = '${busca}' OR nome LIKE '%${busca}%'`;
 
   conn.query(sql, function (err, data) {
     if (err) {
@@ -375,6 +375,8 @@ app.post("/resultado/jogosdemesa/", (req, res) => {
     res.render("jogosdemesabuscar", { layout: false, buscarjogodemesa });
   });
 });
+
+
 
 //---------------------------------------- jogosdemesabuscar.hbs / jogodemesaid.hbs ------------------------------------------//
 // Página onde consulta as informações por cliente por ID

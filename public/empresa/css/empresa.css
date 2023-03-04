@@ -1,0 +1,18 @@
+.largerForm {
+    width: 400px !important;
+}
+
+
+.centerIcon{
+    margin-left: 520px;
+}
+
+.btnCadastro{
+    margin: 20px;
+
+}
+.maincontainer{
+    align-content: center;
+    align-self: center;
+    align-tracks: center    ;
+}

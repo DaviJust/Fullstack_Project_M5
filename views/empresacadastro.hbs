@@ -1,11 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cadastrar Associados</title>
-  <link rel="stylesheet" href="/style.css">
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5579/5579570.png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+
+  <title>Home</title>
+
+    {{!-- importando o CSS --}}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/carousel/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/offcanvas/">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5579/5579570.png">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/empresa/css/empresa.css">
+
 </head>
 
 <body>
@@ -57,13 +70,9 @@
 
       <div class="container">
         <div class="py-5 text-center">
-          <img src="/public/img/girassol.png" alt="girassol" class="center" width="120px" height="100px">
-          <img class="d-block mx-auto mb-4" src="/public/girassol.png" alt="" width="72" height="72">
+          <img class="d-block mx-auto mb-4" src="/empresa/img/girassol.png" alt="" width="72" height="72">
           <h2>Cadastro de Empresas</h2>
-          <p class="lead">Below is an example form built entirely with Bootstrap's form controls. Each required form
-            group
-            has a validation state that can be triggered by attempting to submit the form without completing it.</p>
-        </div>
+            </div>
         <form action="empresa/insertEmpresa" method="post">
           <div class="mb-3">
             <label for="Nome" class="form-label">Nome</label>
@@ -108,7 +117,7 @@
               Digite o endereço.
             </div>
           </div>
-          <button type="submit" class="btn btn-primary">Cadastrar</button>
+            <button class="btnCadastro  btn-outline-success" type="submit">Cadastrar</button>
 
       </div>
       </form>
@@ -139,8 +148,16 @@
       </div>
     </div>
   </footer>
-  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/masking-input.js" data-autoinit="true"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
-</body>
+       {{!-- importando os scripts --}}
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="/script/jquery-slim.min.js"><\/script>')</script>
+        <script src="/home/script/popper.min.js"></script>
+        <script src="/home/script/bootstrap.min.js"></script>
+        <script src="/home/script/holder.min.js"></script>
+
+</body> 

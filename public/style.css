@@ -10,7 +10,7 @@
 }
 
 main {
-  margin-top: 80px;
+  margin-top: 76px;
 }
 
 /* Navbar */
@@ -70,31 +70,8 @@ nav input {
   font-size: 30px;
 }
 
-/* Configuracoes lista de brinquedos */
-.cardmain {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 10px 25px 0 25px;
-}
-
-.card {
-  margin: 15px;
-  padding: 15px;
-}
-
-.cardmain a {
-  background-color: #fa2a00;
-  border: none;
-}
-
-.cardmain a:hover {
-  background-color: #3d1c00;
-  border: none;
-}
-
-/* Configuracao cadastro */
-.formadd {
+/* Configuracao para os formulario do cadastro e editar */
+.formaddedit {
   margin: 150px auto 50px;
   max-width: 800px;
   padding: 50px;
@@ -102,21 +79,125 @@ nav input {
   border-radius: 10px;
 }
 
-.formadd button {
+.formaddedit button {
   background-color: #fa2a00;
   border: none;
 }
 
-/* #btnaddlivro {
+/* Configuracoes lista de brinquedos */
+.cardtoylist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 10px 25px 0 25px;
+}
+
+.cardtoylist .card {
+  margin: 15px;
+  padding: 15px;
+}
+
+.cardtoylist a {
+  background-color: #fa2a00;
+  border: none;
+}
+
+.cardtoylist a:hover {
+  background-color: #3d1c00;
+  border: none;
+}
+
+/* Configuracoes brinquedos ID */
+.cardtoyid{
+  padding: 15px;
+}
+
+.cardtoyid img{
+  height: 450px;
+  width:450px;
+}
+
+/* Configuracoes lista de action figures */
+.cardactionfigureslist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 10px 25px 0 25px;
+}
+
+.cardactionfigureslist .card {
+  margin: 15px;
+  padding: 15px;
+}
+
+.cardactionfigureslist a {
+  background-color: #fa2a00;
+  border: none;
+}
+
+.cardactionfigureslist a:hover {
+  background-color: #3d1c00;
+  border: none;
+}
+
+/* Configuracoes lista de jogos de mesa */
+.cardtablegameslist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 10px 25px 0 25px;
+}
+
+.cardtablegameslist .card {
+  margin: 15px;
+  padding: 15px;
+}
+
+.cardtablegameslist a {
+  background-color: #fa2a00;
+  border: none;
+}
+
+.cardtablegameslist a:hover {
+  background-color: #3d1c00;
+  border: none;
+}
+
+/* Configuracoes lista de gift cards */
+.cardgiftcardslist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 10px 25px 0 25px;
+}
+
+.cardgiftcardslist .card {
+  margin: 15px;
+  padding: 15px;
+}
+
+.cardgiftcardslist a {
+  background-color: #fa2a00;
+  border: none;
+}
+
+.cardgiftcardslist a:hover {
+  background-color: #3d1c00;
+  border: none;
+}
+
+
+
+#btnaddprodutos {
     text-align: center;
     cursor: pointer;
     margin-bottom: 10px;
   }
   
-  #btnaddlivro button {
+  #btnaddprodutos button {
     border: none;
     background-color: lime;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     border-radius: 0 0 10px 10px;
     width: 300px;
@@ -126,10 +207,10 @@ nav input {
     margin: 0 0 10px;
   }
   
-  #btnaddlivro button:hover {
+  #btnaddprodutos button:hover {
     color: white;
     background-color: green;
-  } */
+  }
 
 /* Configuracao buscarbrinquedo */
 .buscarback {
@@ -149,3 +230,4 @@ nav input {
   align-items: center;
   justify-content: space-around;
 }
+

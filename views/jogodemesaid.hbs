@@ -54,16 +54,30 @@
         </nav>
     </header>
     <main>
-        <h1>{{nome}}</h1>
-        - Gênero: {{genero}}
         <br>
-        - Descrição: {{descricao}}
+        <h1>Informações do Jogo de Mesa</h1>
         <br>
-        - Preço: {{preco}}
-        <br>
-        <a href="/jogodemesa/editar/{{id}}">Edite suas informações</a>
-        <a href="/jogodemesa/excluir/{{id}}">Excluir produto</a>
-        {{/each}}
+        <div class="cardtoyid">
+            <div class="card mb-3 " style="align-items-center max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="{{img}}" class="img-fluid rounded-start" alt="produto">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">{{nome}}</h5>
+                            <p class="card-text">Gênero: {{genero}}</p>
+                            <p class="card-text">Descrição: {{descricao}}</p>
+                            <p class="card-text">{{preco}}</p>
+                            <a href="/jogodemesa/editar/{{id}}"><button type="button"
+                                    class="btn btn-success">Editar</button></a>
+                            <a href="/jogodemesa/excluir/{{id}}"><button type="button"
+                                    class="btn btn-danger">Excluir</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
     </main>
     <footer>
         <div class="footergira">

@@ -53,21 +53,28 @@
         </nav>
     </header>
     <main>
+        <br>
         <h1>Informações do Action Figure</h1>
-
-        <h1> {{listaractionfigure.nome}} </h1>
-
-
-        <p>Nome: {{listaractionfigure.tipo}} </p>
-
-        <p>Valor: {{listaractionfigure.preco}} </p>
-
-        <a href="/actionfigure/edit/{{listaractionfigure.id}}"> EDITAR</a>
-
-        <br> <br>
-
-        <a href="/actionfigure/remove/{{listaractionfigure.id}}"> EXCLUIR</a>
-
+        <br>
+        <div class="cardtoyid">
+            <div class="card mb-3 " style="align-items-center max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="{{listaractionfigure.img}}" class="img-fluid rounded-start" alt="produto">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">{{listaractionfigure.nome}}</h5>
+                            <p class="card-text">{{listaractionfigure.tipo}}</p>
+                            <p class="card-text">{{listaractionfigure.preco}}</p>
+                            <a href="/actionfigure/edit/{{listaractionfigure.id}}"><button type="button"
+                                    class="btn btn-success">Editar</button></a>
+                            <a href="/actionfigure/remove/{{listaractionfigure.id}}"><button type="button"
+                                    class="btn btn-danger">Excluir</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </main>
     <footer>
         <div class="footergira">

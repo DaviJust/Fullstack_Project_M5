@@ -55,16 +55,30 @@
         </nav>
     </header>
     <main>
-
-        <h1>{{nome}}</h1>
-        - Marca: {{marca}}
         <br>
-        - Tipo de material: {{material}}
+        <h1>Informações do Brinquedo</h1>
         <br>
-        - Preço: {{preco}}
-        <br>
-        <a href="/brinquedo/editar/{{id}}">Edite suas informações</a>
-        <a href="/brinquedo/excluir/{{id}}">Excluir cliente</a>
+        <div class="cardtoyid">
+            <div class="card mb-3 " style="align-items-center max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="{{img}}" class="img-fluid rounded-start" alt="produto">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">{{nome}}</h5>
+                            <p class="card-text">Marca: {{marca}}</p>
+                            <p class="card-text">Tipo de material: {{material}}</p>
+                            <p class="card-text">{{preco}}</p>
+                            <a href="/brinquedo/editar/{{id}}"><button type="button"
+                                    class="btn btn-success">Editar</button></a>
+                            <a href="/brinquedo/excluir/{{id}}"><button type="button"
+                                    class="btn btn-danger">Excluir</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="footergira">

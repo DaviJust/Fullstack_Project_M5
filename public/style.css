@@ -75,7 +75,7 @@ nav input {
   margin: 150px auto 50px;
   max-width: 800px;
   padding: 50px;
-  background-color: #f0d8a8;
+  background-color: #e9cd98;
   border-radius: 10px;
 }
 
@@ -83,7 +83,9 @@ nav input {
   background-color: #fa2a00;
   border: none;
 }
-
+.formaddedit button:hover{
+  background-color: #3d1c00;
+}
 /* Configuracoes lista de brinquedos */
 .cardtoylist {
   display: flex;
@@ -110,11 +112,18 @@ nav input {
 /* Configuracoes brinquedos ID */
 .cardtoyid {
   padding: 15px;
+  padding-bottom: 147px;
 }
 
 .cardtoyid img {
   height: 450px;
   width: 450px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.cardtoyid .card-body{
+  padding-top: 125px;
 }
 
 /* Configuracoes lista de action figures */
@@ -227,4 +236,17 @@ nav input {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: grey;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e7c31f;
 }

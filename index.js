@@ -36,8 +36,9 @@ app.post("/brinquedo/cadastrar", (req, res) => {
   const marca = req.body.marca;
   const material = req.body.material;
   const preco = req.body.preco;
+  const img = req.body.img;
 
-  const sql = `INSERT INTO brinquedos (nome, marca, material, preco) VALUES ('${nome}', '${marca}', '${material}','${preco}' )`;
+  const sql = `INSERT INTO brinquedos (nome, marca, material, preco, img) VALUES ('${nome}', '${marca}', '${material}','${preco}', '${img}' )`;
   conn.query(sql, function (err) {
     if (err) {
       console.log(err);
@@ -140,8 +141,9 @@ app.post("/brinquedo/updatebrinquedo", (req, res) => {
   const marca = req.body.marca;
   const material = req.body.material;
   const preco = req.body.preco;
+  const img = req.body.img;
 
-  const sql = `UPDATE brinquedos SET nome = '${nome}', marca = '${marca}', material = '${material}', preco = '${preco}' WHERE id = ${id}`;
+  const sql = `UPDATE brinquedos SET nome = '${nome}', marca = '${marca}', material = '${material}', preco = '${preco}', img = '${img}' WHERE id = ${id}`;
 
   conn.query(sql, function (err, data) {
     if (err) {
@@ -331,8 +333,9 @@ app.post("/jogodemesa/addjogodemesa", (req, res) => {
   const nome = req.body.nome;
   const preco = req.body.preco;
   const descricao = req.body.descricao;
+  const img = req.body.img;
 
-  const sql = `INSERT INTO jogodemesa (genero, nome, preco, descricao) VALUES ('${genero}', '${nome}', '${preco}','${descricao}' )`;
+  const sql = `INSERT INTO jogodemesa (genero, nome, preco, descricao, img) VALUES ('${genero}', '${nome}', '${preco}','${descricao}','${img}' )`;
   conn.query(sql, function (err) {
     if (err) {
       console.log(err);
@@ -435,8 +438,9 @@ app.post("/jogodemesa/updatejogodemesa", (req, res) => {
   const nome = req.body.nome;
   const preco = req.body.preco;
   const descricao = req.body.descricao;
+  const img = req.body.img;
 
-  const sql = `UPDATE jogodemesa SET genero = '${genero}', nome = '${nome}', preco = '${preco}', descricao = '${descricao}' WHERE id = ${id}`;
+  const sql = `UPDATE jogodemesa SET genero = '${genero}', nome = '${nome}', preco = '${preco}', descricao = '${descricao}', img = '${img}' WHERE id = ${id}`;
 
   conn.query(sql, function (err, data) {
     if (err) {
@@ -488,9 +492,9 @@ app.post("/buscar/giftcard/", (req, res) => {
 });
 
 app.post("/giftcard/addgiftcard", (req, res) => {
-  const { tipo, nome, preco } = req.body;
+  const { tipo, nome, preco, img } = req.body;
 
-  const sql = `INSERT INTO giftcard (tipo, nome, preco) VALUES ( '${tipo}' ,'${nome}','${preco}' )`;
+  const sql = `INSERT INTO giftcard (tipo, nome, preco, img) VALUES ( '${tipo}' ,'${nome}','${preco}', '${img}' )`;
   conn.query(sql, function (err) {
     if (err) {
       console.log(err);
@@ -547,9 +551,9 @@ app.get("/giftcard/edit/:id", (req, res) => {
 });
 
 app.post("/alterar/updategiftcard", (req, res) => {
-  const { id, tipo, nome, preco } = req.body;
+  const { id, tipo, nome, preco, img } = req.body;
 
-  const sql = `UPDATE giftcard SET tipo = '${tipo}', nome = '${nome}', preco = '${preco}' WHERE id = '${id}' `;
+  const sql = `UPDATE giftcard SET tipo = '${tipo}', nome = '${nome}', preco = '${preco}', img = '${img}' WHERE id = '${id}' `;
 
   conn.query(sql, function (err) {
     if (err) {
@@ -557,7 +561,7 @@ app.post("/alterar/updategiftcard", (req, res) => {
     }
 
     console.log("Alterado com sucesso");
-    res.redirect(`/giftcard/${id}`);
+    res.redirect("/catalogogiftcard");
   });
 });
 
@@ -598,15 +602,15 @@ app.post("/buscar/actionfigure/", (req, res) => {
 });
 
 app.post("/actionfigure/insertactionfigure", (req, res) => {
-  const { tipo, nome, preco } = req.body;
+  const { tipo, nome, preco, img } = req.body;
 
-  const sql = `INSERT INTO actionfigure (tipo, nome, preco) VALUES ( '${tipo}' ,'${nome}','${preco}' )`;
+  const sql = `INSERT INTO actionfigure (tipo, nome, preco, img) VALUES ( '${tipo}' ,'${nome}','${preco}', '${img}' )`;
   conn.query(sql, function (err) {
     if (err) {
       console.log(err);
     }
 
-    res.redirect("/");
+    res.redirect("/catalogoactionfigures");
     console.log("Cadastro com sucesso");
   });
 });
@@ -657,9 +661,9 @@ app.get("/actionfigure/edit/:id", (req, res) => {
 });
 
 app.post("/alterar/updateactionfigure", (req, res) => {
-  const { id, tipo, nome, preco } = req.body;
+  const { id, tipo, nome, preco, img } = req.body;
 
-  const sql = `UPDATE actionfigure SET tipo = '${tipo}', nome = '${nome}', preco = '${preco}' WHERE id = '${id}' `;
+  const sql = `UPDATE actionfigure SET tipo = '${tipo}', nome = '${nome}', preco = '${preco}', img = '${img}' WHERE id = '${id}' `;
 
   conn.query(sql, function (err) {
     if (err) {
@@ -667,7 +671,7 @@ app.post("/alterar/updateactionfigure", (req, res) => {
     }
 
     console.log("Alterado com sucesso");
-    res.redirect(`/actionfigure/${id}`);
+    res.redirect('/catalogoactionfigures');
   });
 });
 
@@ -800,7 +804,7 @@ app.get("/empresa/remove/:cnpj", (req, res) => {
 // Conexão com DB no mysql
 const conn = mysql.createConnection({
   host: "127.0.0.1",
-  port: "3307",
+  port: "3306",
   user: "root",
   password: "",
   database: "infanciagirassol",

@@ -29,11 +29,11 @@
 # Trabalho de Front-end
 <div>
 <h4>Usamos o Framework Bootstrap para a estilização do site</h4>
-<li>Usamos as seguintes principais ferramentas:</li>
-<ul>Carrossel</ul>
-<ul>Grid</ul>
-<ul>Flex-box</ul>
-<ul>Formulário</ul>
+<ul>Usamos as seguintes principais ferramentas:</ul>
+<li>Carrossel</li>
+<li>Grid</li>
+<li>Flex-box</li>
+<li>Formulário</li>
 </div>
 <p>Foi de extrema importância o boostrap, pois ele permite uma estiliação mais rápida, todavia foi necessário um estudo aprofundado de algumas classes e seus impactos para fazer o CSS funcionar, e assim ter responsividade, mas sem parecer totalmente com o boostrap.</p>
 
@@ -48,7 +48,7 @@
 <li>2. Instale o xampp.
 </li>
 <li>3. Baixe o projeto</li>
-<li>3. Entre no projeto pelo Visual Studio Code, abra o terminal e baixe as dependências usando o código: </li>
+<li>4. Entre no projeto pelo Visual Studio Code, abra o terminal e baixe as dependências usando o código: </li>
 
 ```
 npm i express

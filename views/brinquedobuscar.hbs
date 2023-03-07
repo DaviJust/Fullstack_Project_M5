@@ -52,30 +52,35 @@
         </nav>
     </header>
     <main>
-        <h1>Resultado da pesquisa: {{buscarbrinquedo.nome}}</h1>
-        <hr>
-        <div class="buscarback">
-            <img src="{{buscarbrinquedo.img}}">
-            <br>
-            <strong>{{buscarbrinquedo.nome}}</strong>
-            <br>
-            Modelo: {{buscarbrinquedo.marca}}
-            <br>
-            Tipo: {{buscarbrinquedo.material}}
-            <br>
-            Preço: {{buscarbrinquedo.preco}}
-            <br>
-            <div class="botoesbuscar">
-                <a class="beditar" href="/brinquedo/editar/{{buscarbrinquedo.id}}"><button>Editar</button></a>
-                <a class="bexcluir" href="/brinquedo/excluir/{{buscarbrinquedo.id}}"><button>Excluir</button></a>
+        <br>
+        <h1>Informações do Brinquedo</h1>
+        <br>
+        <div class="cardtoyid">
+            <div class="card mb-3 " style="align-items-center max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="{{buscarbrinquedo.img}}" class="img-fluid rounded-start" alt="produto">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">{{buscarbrinquedo.nome}}</h5>
+                            <p class="card-text">Marca: {{buscarbrinquedo.marca}}</p>
+                            <p class="card-text">Tipo de material: {{buscarbrinquedo.material}}</p>
+                            <p class="card-text">{{buscarbrinquedo.preco}}</p>
+                            <a href="/brinquedo/editar/{{buscarbrinquedo.id}}"><button type="button"
+                                    class="btn btn-success">Editar</button></a>
+                            <a href="/brinquedo/excluir/{{buscarbrinquedo.id}}" button type="button"
+                                class="btn btn-danger">Excluir</button></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
     </main>
     <footer>
         <div class="footergira">
             <a href="/">
                 <div className='footerlogo'>
-                     <img src="/src/logo.png" width="150"/>
+                    <img src="/src/logo.png" width="150" />
                 </div>
             </a>
             <div className='redesocias'>

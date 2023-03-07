@@ -52,18 +52,29 @@
         </nav>
     </header>
     <main>
-        <h1>Resultado da pesquisa: {{buscarjogodemesa.nome}}</h1>
-        <hr>
-        - <strong>{{buscarjogodemesa.nome}}</strong>
         <br>
-        - Modelo: {{buscarjogodemesa.genero}}
+        <h1>Informações do Jogo de mesa</h1>
         <br>
-        - Gênero: {{buscarjogodemesa.descricao}}
-        <br>
-        - Preço: {{buscarjogodemesa.preco}}
-        <br>
-        <a href="/jogodemesa/editar/{{buscarjogodemesa.id}}">Edite suas informações</a>
-        <a href="/jogodemesa/excluir/{{buscarjogodemesa.id}}">Excluir produto</a>
+        <div class="cardtoyid">
+            <div class="card mb-3 " style="align-items-center max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="{{buscarjogodemesa.img}}" class="img-fluid rounded-start" alt="produto">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">{{buscarjogodemesa.nome}}</h5>
+                            <p class="card-text">{{buscarjogodemesa.genero}}</p>
+                            <p class="card-text">{{buscarjogodemesa.descricao}}</p>
+                            <p class="card-text">{{buscarjogodemesa.preco}}</p>
+                            <a href="/jogodemesa/editar/{{buscarjogodemesa.id}}"><button type="button"
+                                    class="btn btn-success">Editar</button></a>
+                            <a href="/jogodemesa/excluir/{{buscarjogodemesa.id}}" button type="button"
+                                class="btn btn-danger">Excluir</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </main>
     <footer>
         <div class="footergira">

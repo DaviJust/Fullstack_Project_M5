@@ -91,7 +91,7 @@ npm i nodemon
 <img src="https://user-images.githubusercontent.com/112717111/223501367-e7d8d0de-55e0-4287-bb1d-53cea615828a.png" alt="funcionamento" width="24" height="24">
 <img src="https://user-images.githubusercontent.com/112717111/223501369-ea39a680-3ade-4f12-a1d7-59df0d38bd49.png" alt="funcionamento" width="24" height="24">
 
-     
+---
 
 <img src="https://user-images.githubusercontent.com/112717111/223495747-f1decb8a-c77e-4160-b218-98dcbadda909.jpg" alt="funcionamento" alt="header" width="550" height="300">
 </div>

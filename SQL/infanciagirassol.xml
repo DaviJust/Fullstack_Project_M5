@@ -5,9 +5,9 @@
 - https://www.phpmyadmin.net
 -
 - Host: 127.0.0.1
-- Tempo de geração: 28/02/2023 às 20:36
+- Tempo de geração: 07-Mar-2023 às 05:50
 - Versão do servidor: 10.4.27-MariaDB
-- Versão do PHP: 8.2.0
+- versão do PHP: 8.2.0
 -->
 
 <pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
@@ -22,8 +22,9 @@
                   `tipo` varchar(100) DEFAULT NULL,
                   `nome` varchar(200) DEFAULT NULL,
                   `preco` varchar(50) DEFAULT NULL,
+                  `img` varchar(500) NOT NULL,
                   PRIMARY KEY (`id`)
-                ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+                ) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
             </pma:table>
             <pma:table name="brinquedos">
                 CREATE TABLE `brinquedos` (
@@ -34,7 +35,7 @@
                   `preco` varchar(30) DEFAULT NULL,
                   `img` varchar(500) NOT NULL,
                   PRIMARY KEY (`id`)
-                ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+                ) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
             </pma:table>
             <pma:table name="empresa">
                 CREATE TABLE `empresa` (
@@ -61,18 +62,20 @@
                   `tipo` varchar(50) DEFAULT NULL,
                   `nome` varchar(50) DEFAULT NULL,
                   `preco` varchar(30) DEFAULT NULL,
+                  `img` varchar(500) NOT NULL,
                   PRIMARY KEY (`id`)
-                ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+                ) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
             </pma:table>
             <pma:table name="jogodemesa">
                 CREATE TABLE `jogodemesa` (
                   `id` int(11) NOT NULL AUTO_INCREMENT,
                   `nome` varchar(50) DEFAULT NULL,
                   `genero` varchar(50) DEFAULT NULL,
-                  `descricao` varchar(500) DEFAULT NULL,
+                  `descricao` varchar(5000) DEFAULT NULL,
                   `preco` varchar(20) DEFAULT NULL,
+                  `img` varchar(500) NOT NULL,
                   PRIMARY KEY (`id`)
-                ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+                ) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
             </pma:table>
         </pma:database>
     </pma:structure_schemas>
@@ -85,34 +88,80 @@
         <table name="actionfigure">
             <column name="id">1</column>
             <column name="tipo">Action Figure</column>
-            <column name="nome">Vingadores - Homem de Ferro</column>
-            <column name="preco">R$96,72</column>
+            <column name="nome">SATORU GOJO - JUJUTSU KAISEN - BANDAI</column>
+            <column name="preco">R$ 599,00</column>
+            <column name="img">https://www.fantoy.com.br/media/catalog/product/cache/5070b15b05522f191912dd31c57262ab/g/o/gojo-min_1.jpg</column>
         </table>
         <table name="actionfigure">
             <column name="id">2</column>
             <column name="tipo">Action Figure</column>
-            <column name="nome">Vingadores - Capitão América</column>
-            <column name="preco">R$83,99</column>
+            <column name="nome">OPTIMUS PRIME - TRANSFORMERS</column>
+            <column name="preco">R$ 999,00</column>
+            <column name="img">https://www.fantoy.com.br/media/catalog/product/cache/5070b15b05522f191912dd31c57262ab/o/p/optimus_prime-min.jpg</column>
         </table>
         <table name="actionfigure">
             <column name="id">3</column>
             <column name="tipo">Action Figure</column>
-            <column name="nome">Vingadores - Hulk</column>
-            <column name="preco">R$128,99</column>
+            <column name="nome">TINKERBELL (FALL VARIANT)</column>
+            <column name="preco">R$ 3.499,00</column>
+            <column name="img">https://www.fantoy.com.br/media/catalog/product/cache/5070b15b05522f191912dd31c57262ab/t/i/tinker_bell_fall_variant_2-min.jpg</column>
         </table>
         <table name="actionfigure">
             <column name="id">4</column>
             <column name="tipo">Action Figure</column>
-            <column name="nome">Vingadores - Thor</column>
-            <column name="preco">R$96,90</column>
+            <column name="nome">GOKU SUPER SAIYAN - DRAGON BALL Z - BANDAI</column>
+            <column name="preco">R$ 699,00</column>
+            <column name="img">https://www.fantoy.com.br/media/catalog/product/cache/5070b15b05522f191912dd31c57262ab/g/o/goku1-min_1.jpg</column>
+        </table>
+        <table name="actionfigure">
+            <column name="id">5</column>
+            <column name="tipo">Action Figure</column>
+            <column name="nome">ETERNAL SAILOR MOON - SAILOR MOON ETERNAL - BANDAI</column>
+            <column name="preco">R$ 499,00</column>
+            <column name="img">https://www.fantoy.com.br/media/catalog/product/cache/5070b15b05522f191912dd31c57262ab/e/t/eternal_sailor_moon-min.jpg</column>
+        </table>
+        <table name="actionfigure">
+            <column name="id">6</column>
+            <column name="tipo">Action Figure</column>
+            <column name="nome">THE WATCHER - MARVEL COMICS</column>
+            <column name="preco">R$ 349,00</column>
+            <column name="img">https://www.fantoy.com.br/media/catalog/product/cache/5070b15b05522f191912dd31c57262ab/w/a/watcher-min.jpg</column>
+        </table>
+        <table name="actionfigure">
+            <column name="id">7</column>
+            <column name="tipo">Action Figure</column>
+            <column name="nome">BETA RAY BILL - MARVEL COMICS</column>
+            <column name="preco">R$ 449,00</column>
+            <column name="img">https://www.fantoy.com.br/media/catalog/product/cache/5070b15b05522f191912dd31c57262ab/b/e/beta_ray_bill_2-min.jpg</column>
+        </table>
+        <table name="actionfigure">
+            <column name="id">8</column>
+            <column name="tipo">Action Figure</column>
+            <column name="nome">WONDER WOMAN GOLDEN ARMOR - WONDER WOMAN 1984 </column>
+            <column name="preco">R$ 2.999,00</column>
+            <column name="img">https://www.fantoy.com.br/media/catalog/product/cache/5070b15b05522f191912dd31c57262ab/w/o/wonder7-min.jpg</column>
+        </table>
+        <table name="actionfigure">
+            <column name="id">9</column>
+            <column name="tipo">Action Figure</column>
+            <column name="nome">SUPERMAN - DC COMICS </column>
+            <column name="preco">R$ 3.999,00</column>
+            <column name="img">https://www.fantoy.com.br/media/catalog/product/cache/5070b15b05522f191912dd31c57262ab/s/u/superman-min_1.jpg</column>
+        </table>
+        <table name="actionfigure">
+            <column name="id">10</column>
+            <column name="tipo">Action Figure</column>
+            <column name="nome">SCARLET WITCH DELUXE - WANDAVISION - IRON STUDIOS</column>
+            <column name="preco">R$ 1.199,00</column>
+            <column name="img">https://www.fantoy.com.br/media/catalog/product/cache/5070b15b05522f191912dd31c57262ab/s/c/scarlet.jpg</column>
         </table>
         <!-- Tabela brinquedos -->
         <table name="brinquedos">
             <column name="id">1</column>
-            <column name="nome">LEGO Classic - Caixa Média de Peças Criativas</column>
+            <column name="nome">LEGO Classic</column>
             <column name="marca">LEGO</column>
             <column name="material">Plástico</column>
-            <column name="preco">R$233,99</column>
+            <column name="preco">R$ 233,99</column>
             <column name="img">https://m.media-amazon.com/images/I/91RaDysK8zL._AC_SX425_.jpg</column>
         </table>
         <table name="brinquedos">
@@ -120,7 +169,7 @@
             <column name="nome">Pula Pirata</column>
             <column name="marca">Estrela</column>
             <column name="material">Plástico</column>
-            <column name="preco">R$74,99</column>
+            <column name="preco">R$ 74,99</column>
             <column name="img">https://estrela.vtexassets.com/arquivos/ids/170662/7896027541922-02.jpg?v=637919570598800000</column>
         </table>
         <table name="brinquedos">
@@ -128,7 +177,7 @@
             <column name="nome">Crocodilo Dentista</column>
             <column name="marca">POLIBRINQ</column>
             <column name="material">Plástico</column>
-            <column name="preco">R$47,30</column>
+            <column name="preco">R$ 47,30</column>
             <column name="img">https://m.media-amazon.com/images/I/61yLd3xdlqL._AC_SX679_.jpg</column>
         </table>
         <table name="brinquedos">
@@ -136,8 +185,56 @@
             <column name="nome">Pinguim Numa Fria</column>
             <column name="marca">Art Brink</column>
             <column name="material">Plástico</column>
-            <column name="preco">R$29,49</column>
+            <column name="preco">R$ 29,49</column>
             <column name="img">https://m.media-amazon.com/images/I/71U3Wq+NVeL._AC_SX679_.jpg</column>
+        </table>
+        <table name="brinquedos">
+            <column name="id">5</column>
+            <column name="nome">Dino Papa</column>
+            <column name="marca">Elka</column>
+            <column name="material">‎Plástico</column>
+            <column name="preco">R$ 54,90</column>
+            <column name="img">https://m.media-amazon.com/images/I/61zbnB9U02L._AC_SL1200_.jpg</column>
+        </table>
+        <table name="brinquedos">
+            <column name="id">6</column>
+            <column name="nome">Potato Head Mr.</column>
+            <column name="marca">Playskool</column>
+            <column name="material">Plástico</column>
+            <column name="preco">R$ 84,90</column>
+            <column name="img">https://m.media-amazon.com/images/I/51Kjrqzk22L._AC_SL1000_.jpg</column>
+        </table>
+        <table name="brinquedos">
+            <column name="id">7</column>
+            <column name="nome">Hot Wheels - Pista Ataque de Cobra</column>
+            <column name="marca">Mattel</column>
+            <column name="material">‎Plástico, Metal</column>
+            <column name="preco">R$ 258,75</column>
+            <column name="img">https://m.media-amazon.com/images/I/61cVrs+DItL._AC_SX522_.jpg</column>
+        </table>
+        <table name="brinquedos">
+            <column name="id">8</column>
+            <column name="nome">Xilofone</column>
+            <column name="marca">Fisher-Price</column>
+            <column name="material">‎Plástico</column>
+            <column name="preco">R$ 127,99</column>
+            <column name="img">https://m.media-amazon.com/images/I/61l6mlc0slL._AC_SL1500_.jpg</column>
+        </table>
+        <table name="brinquedos">
+            <column name="id">9</column>
+            <column name="nome">Super Mario vs. Bowser Castle</column>
+            <column name="marca">Candide</column>
+            <column name="material">‎Plástico</column>
+            <column name="preco">R$ 474,99</column>
+            <column name="img">https://m.media-amazon.com/images/I/510DHge-TJL._AC_SX679_.jpg</column>
+        </table>
+        <table name="brinquedos">
+            <column name="id">20</column>
+            <column name="nome">Zebra Blocos Surpresa</column>
+            <column name="marca">Fisher-Price</column>
+            <column name="material">Plástico</column>
+            <column name="preco">R$ 86,98</column>
+            <column name="img">https://m.media-amazon.com/images/I/71hXkmlQrML._AC_SL1500_.jpg</column>
         </table>
         <!-- Tabela empresa -->
         <!-- Tabela funcionario -->
@@ -145,7 +242,7 @@
             <column name="cpf">19287831556</column>
             <column name="nome">Yago Marcelo Leandro Nogueira</column>
             <column name="cargo">Gerente</column>
-            <column name="idade">40</column>
+            <column name="idade">41</column>
         </table>
         <table name="funcionario">
             <column name="cpf">26315989381</column>
@@ -170,54 +267,152 @@
             <column name="id">1</column>
             <column name="tipo">Gift Card</column>
             <column name="nome">Gift Card Digital Roblox R$25</column>
-            <column name="preco">R$25</column>
+            <column name="preco">R$ 25,00</column>
+            <column name="img">https://images-americanas.b2w.io/produtos/4816255760/imagens/gift-card-digital-roblox-r-25/4816255760_1_xlarge.jpg</column>
         </table>
         <table name="giftcard">
             <column name="id">2</column>
             <column name="tipo">Gift Card</column>
             <column name="nome">Gift Card Digital Roblox R$40</column>
-            <column name="preco">R$40</column>
+            <column name="preco">R$ 40,00</column>
+            <column name="img">https://images-americanas.b2w.io/produtos/4033372020/imagens/gift-card-digital-roblox-r-40/4033372020_1_xlarge.jpg</column>
         </table>
         <table name="giftcard">
             <column name="id">3</column>
             <column name="tipo">Gift Card</column>
             <column name="nome">Gift Card Digital Roblox R$60</column>
-            <column name="preco">R$60</column>
+            <column name="preco">R$ 60,00</column>
+            <column name="img">https://images-americanas.b2w.io/produtos/4052351574/imagens/gift-card-digital-roblox-r-60/4052351574_1_xlarge.jpg</column>
         </table>
         <table name="giftcard">
             <column name="id">4</column>
             <column name="tipo">Gift Card</column>
             <column name="nome">Gift Card Digital Roblox R$100</column>
-            <column name="preco">R$100</column>
+            <column name="preco">R$ 100,00</column>
+            <column name="img">https://images-americanas.b2w.io/produtos/4816256501/imagens/gift-card-digital-roblox-r-100/4816256501_1_xlarge.jpg</column>
+        </table>
+        <table name="giftcard">
+            <column name="id">5</column>
+            <column name="tipo">Gift Card</column>
+            <column name="nome">Gift Card Google Play: 15 Reais</column>
+            <column name="preco">R$ 15,00</column>
+            <column name="img">https://images.kabum.com.br/produtos/fotos/426195/gift-card-google-play-30-reais-cartao-presente-digital_1677588366_gg.jpg</column>
+        </table>
+        <table name="giftcard">
+            <column name="id">6</column>
+            <column name="tipo">Gift Card</column>
+            <column name="nome">Gift Card Google Play: 30 Reais</column>
+            <column name="preco">R$ 30,00</column>
+            <column name="img">https://images.kabum.com.br/produtos/fotos/426195/gift-card-google-play-30-reais-cartao-presente-digital_1677588366_gg.jpg</column>
+        </table>
+        <table name="giftcard">
+            <column name="id">7</column>
+            <column name="tipo">Gift Card</column>
+            <column name="nome">Gift Card Google Play: 50 Reais</column>
+            <column name="preco">R$ 50,00</column>
+            <column name="img">https://images.kabum.com.br/produtos/fotos/426195/gift-card-google-play-30-reais-cartao-presente-digital_1677588366_gg.jpg</column>
+        </table>
+        <table name="giftcard">
+            <column name="id">8</column>
+            <column name="tipo">Gift Card</column>
+            <column name="nome">Gift Card Google Play: 100 Reais</column>
+            <column name="preco">R$ 100,00</column>
+            <column name="img">https://images.kabum.com.br/produtos/fotos/426195/gift-card-google-play-30-reais-cartao-presente-digital_1677588366_gg.jpg</column>
+        </table>
+        <table name="giftcard">
+            <column name="id">9</column>
+            <column name="tipo">Gift Card</column>
+            <column name="nome">Gift Card Google Play: 150 Reais</column>
+            <column name="preco">R$ 150,00</column>
+            <column name="img">https://images.kabum.com.br/produtos/fotos/426195/gift-card-google-play-30-reais-cartao-presente-digital_1677588366_gg.jpg</column>
+        </table>
+        <table name="giftcard">
+            <column name="id">10</column>
+            <column name="tipo">Gift Card</column>
+            <column name="nome">Giftcard Digital Minecraft Java &amp; Bedrock R$129</column>
+            <column name="preco">R$ 129,00</column>
+            <column name="img">https://images-americanas.b2w.io/produtos/5680632836/imagens/giftcard-digital-minecraft-java-bedrock-r-129/5680632836_1_xlarge.jpg</column>
         </table>
         <!-- Tabela jogodemesa -->
         <table name="jogodemesa">
             <column name="id">1</column>
             <column name="nome">Super Banco Imobiliário</column>
-            <column name="genero">NULL</column>
+            <column name="genero">Ação, Faz de conta</column>
             <column name="descricao">O tradicional jogo Banco Imobiliário, com a máquina de crédito e débito para fazer as transações bancárias. Inclui 1 tabuleiro, 28 títulos de posse, 6 cartões, 80 casas, 2 dados, 6 marcadores de metal, 1 máquina de cartão (pilhas não inclusas), 32 cartões noticia e 1 manual de instruções.</column>
-            <column name="preco">R$169,90</column>
+            <column name="preco">R$ 169,90</column>
+            <column name="img">https://m.media-amazon.com/images/I/61iv2b73jNL._AC_SL1000_.jpg</column>
         </table>
         <table name="jogodemesa">
             <column name="id">2</column>
             <column name="nome">Jogo da Vida</column>
-            <column name="genero">NULL</column>
+            <column name="genero">Entretenimento</column>
             <column name="descricao">Trilhe o seu caminho em busca do sucesso. Desenvolva a sua carreira, ganhe dinheiro, case e tenha filhos. O jogo da vida é a simulação da vida real com muita diversão.</column>
-            <column name="preco">R$119,90</column>
+            <column name="preco">R$ 119,90</column>
+            <column name="img">https://m.media-amazon.com/images/I/61Fl2EauKCL._AC_SL1000_.jpg</column>
         </table>
         <table name="jogodemesa">
             <column name="id">3</column>
-            <column name="nome">War</column>
-            <column name="genero">NULL</column>
+            <column name="nome">War Edição Especial</column>
+            <column name="genero">Ação, Faz de conta</column>
             <column name="descricao">Desafie seus amigos e descubra por que War é o jogo de estratégia mais jogado do Brasil!</column>
-            <column name="preco">R$104,40</column>
+            <column name="preco">R$ 164,97</column>
+            <column name="img">https://m.media-amazon.com/images/I/51H+C+1mK-L._AC_SL1000_.jpg</column>
         </table>
         <table name="jogodemesa">
             <column name="id">4</column>
             <column name="nome">Detetive</column>
-            <column name="genero">NULL</column>
+            <column name="genero">Entretenimento</column>
             <column name="descricao">O milionário Carlos Fortuna foi vítima de assassinato! Percorra a cidade e colete as provas que apontem (ou inocentem) o assassino, a cena e a arma do crime.</column>
-            <column name="preco">R$99,90</column>
+            <column name="preco">R$ 89,90</column>
+            <column name="img">https://m.media-amazon.com/images/I/91deu+m93jL._AC_SL1500_.jpg</column>
+        </table>
+        <table name="jogodemesa">
+            <column name="id">5</column>
+            <column name="nome">Perguntados</column>
+            <column name="genero">Estratégia</column>
+            <column name="descricao">Aplicativo de sucesso mundial, agora em tabuleiro! O Perguntados é um jogo divertido de perguntas e respostas para toda família. Gire a roleta e teste seu conhecimento! Jogue com 360 novas perguntas neste incrível Tabuleiro. - Como jogar: Vence o primeiro jogador que conseguir obter as 6 fichas de personagens do jogo. MODALIDADES OPCIONAIS DE JOGO: Modo difícil: os jogadores não podem usar Curingas em nenhum momento do jogo. O tempo para responder não deve ser maior do que 10 segundos e será controlado pelo jogador que está fazendo a pergunta. Modo médio: os jogadores começam sem Curingas, mas recebem 1 aleatório cada vez que obtêm um personagem. Se não houver mais Curingas, o jogador não receberá nenhuma carta. Modo fácil: os jogadores começam com 4 Curingas de um jogo normal. Se um jogador não tiver mais Curingas, pode passar sua vez e pedir dois Curingas aleatórios. Duelo: só pode ser jogado se houver pelo menos 3 jogadores. O jogador que obtiver a &quot;Coroa&quot; pode escolher desafiar outro jogador para um duelo, que não pode rejeitá-lo. Ambos devem ter pelo menos um personagem igual e esse deve ser escolhido para o duelo. Ambos os jogadores respondem a uma pergunta dessa categoria. O jogador que não foi escolhido para o duelo, lê a pergunta e as opções e espera que os jogadores respondam para anunciar a resposta correta. O primeiro a vencer o duelo rouba o personagem do outro jogador. Se o desafiador responder incorretamente e o jogador desafiado acertar, ele mantém seu personagem, o desafiador perde o seu e encerram a rodada duelo. Em caso de empate, quem é desafiado recebe uma pergunta extra. Se responder corretamente, mantém seu personagem e o desafiador perde o seu, além de passar a sua vez. MONTANDO A ROLETA - Siga os passos abaixo na ordem.</column>
+            <column name="preco">R$ 91,03</column>
+            <column name="img">https://m.media-amazon.com/images/I/61yZQMxI+4L._AC_SL1000_.jpg</column>
+        </table>
+        <table name="jogodemesa">
+            <column name="id">6</column>
+            <column name="nome">Combate</column>
+            <column name="genero">Entretenimento</column>
+            <column name="descricao">Prepare seus soldados e defina a sua estratégia de guerra! Avance sua tropa sem se descuidar em proteger o prisioneiro inimigo. Tenha cuidado, pois o inimigo espalhou minas terrestres que podem impedir seus objetivos. Contém na embalagem: 1 tabuleiro, 40 peças verdes, 40 peças pretas, 2 folhas de etiquetas autoadesivas e manual de instruções.</column>
+            <column name="preco">R$ 45,11</column>
+            <column name="img">https://m.media-amazon.com/images/I/81cEVcSl2uL._AC_SL1500_.jpg</column>
+        </table>
+        <table name="jogodemesa">
+            <column name="id">7</column>
+            <column name="nome">Imagem e Ação 1</column>
+            <column name="genero">Ação, Faz de conta</column>
+            <column name="descricao">O clássico jogo de desenho e adivinhação. E você não precisa ser desenhista, o que vale é a sua criatividade! Cada jogador será o desenhista e, na sua vez, tentará passar à sua equipe uma palavra ou expressão. É proibido falar, escrever letras e números e fazer gestos ou mímicas. Os únicos instrumentos que você terá à disposição são um lápis e um papel, para desenhar, esboçar e rabiscar o que quiser. Os colegas de equipe têm o tempo da ampulheta para adivinhar! São 2.400 palavras ou expressões, divididas em 6 categorias para você e seus amigos passarem ótimos momentos juntos. Descubra como é divertido reunir o pessoal para uma partida de Imagem &amp; Ação</column>
+            <column name="preco">R$ 92,98</column>
+            <column name="img">https://m.media-amazon.com/images/I/61U3VKFdzqL._AC_SL1024_.jpg</column>
+        </table>
+        <table name="jogodemesa">
+            <column name="id">8</column>
+            <column name="nome">Identidade Secreta</column>
+            <column name="genero">Ação, Faz de conta</column>
+            <column name="descricao">Você gosta de jogos com perguntas e respostas repletos de emoção? Então venha conhecer o jogo Perguntando Kids! São diversas perguntas para que os pequenos possam aprender cada vez mais! Aqui, os adultos servem como mediadores para que as crianças brilhem na hora de responder! Como jogar o jogo Perguntando Kids? Esse jogo de perguntas infantil é ideal para 1 a 4 jogadores a partir de 5 anos de idade! Essa diversão em família coloca os adultos como juízes para que as crianças respondam perguntas simples que fazem parte do seu universo! Assim, todos se divertem juntos e o jogo auxilia no aprendizado dos pequenos de uma maneira divertida, exercitando seu raciocínio! São mais de 500 perguntas divididas em 4 temas: 1- Dia a Dia 2- Conhecimentos 3- Mundo 4- Lazer Todas as regras do Perguntando Kids estão incluídas junto com o manual do jogo. Basta encontrar suas companhias, seguir as regras e partir para a diversão!</column>
+            <column name="preco">R$ 46,41</column>
+            <column name="img">https://m.media-amazon.com/images/I/81g716wE-2L._AC_SL1500_.jpg</column>
+        </table>
+        <table name="jogodemesa">
+            <column name="id">9</column>
+            <column name="nome">Twister</column>
+            <column name="genero">Ação</column>
+            <column name="descricao">Participe dessa disputa eletrizante, mão a mão, pé a pé, que vai te virar pelo avesso. Supere a estratégia dos oponentes, colocando as mãos e os pés nos círculos coloridos, de acordo com as indicações da roleta. Se você cair, os oponentes ganham.</column>
+            <column name="preco">R$ 113,90</column>
+            <column name="img">https://m.media-amazon.com/images/I/71p2GzX6CLL._AC_SL1500_.jpg</column>
+        </table>
+        <table name="jogodemesa">
+            <column name="id">13</column>
+            <column name="nome">Jogo Se Vira</column>
+            <column name="genero">Entretenimento</column>
+            <column name="descricao">Equilibre a bolinha embaixo do queixo, ponha a carta sobre a sua cabeça. Faça atividades são acumulativas. Contorça-se, pois para conseguir realizar todas as ações e chegar ao final do tabuleiro, você terá que mostrar que sabe se virar. Vem com: 1 tabuleiro, 4 pinos coloridos, 5 bolinhas plásticas e 54 cartas.</column>
+            <column name="preco">R$ 49,41</column>
+            <column name="img">https://m.media-amazon.com/images/I/61tLUxbXSuL._AC_SX679_.jpg</column>
         </table>
     </database>
 </pma_xml_export>

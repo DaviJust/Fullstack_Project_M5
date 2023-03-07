@@ -13,7 +13,7 @@
     <header>
         <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #f9ce07;">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/"><img src="/home/img/Logo.png" width="150"></a>
+                <a class="navbar-brand" href="/"><img src="" width="50"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -52,33 +52,37 @@
         </nav>
     </header>
     <main>
-        <h1>Editar Gift Card</h1>
-        <hr>
-        <form action="/alterar/updategiftcard" method="POST">
-            <div class="form control">
-                <input type="hidden" name="id" id="id" value="{{giftcard.id}}">
-                <label for="tipo">Tipo</label>
-                <input type="text" name="tipo" placeholder="Digite aqui o tipo" value="{{giftcard.tipo}}">
-            </div>
-
-            <div class="form control">
-                <label for="nome">Nome</label>
-                <input type="text" name="nome" placeholder="Digite aqui o nome do giftcard" value="{{giftcard.nome}}">
-            </div>
-
-            <div class="form control">
-                <label for="preco">Valor</label>
-                <input type="text" name="preco" placeholder="Digite aqui o preco do giftcard"
-                    value="{{giftcard.preco}}">
-            </div>
-
-            <input type="Submit" value="Editar">
+        <div class="formaddedit">
+            <h1>Editando {{giftcard.nome}}</h1>
+            <hr>
+            <form action="/alterar/updategiftcard" method="POST">
+                <div class="mb-3">
+                    <input type="hidden" name="id" id="id" value="{{giftcard.id}}">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" name="nome" value="{{giftcard.nome}}">
+                </div>
+                <div class="mb-3">
+                    <label for="tipo" class="form-label">Tipo</label>
+                    <input type="text" class="form-control" name="tipo" value="{{giftcard.tipo}}">
+                </div>
+                <div class="mb-3">
+                    <label for="preco" class="form-label">Preço</label>
+                    <input type="text" class="form-control" name="preco" value="{{giftcard.preco}}">
+                </div>
+                <div class="mb-3">
+                    <label for="img" class="form-label">Imagen</label>
+                    <input type="text" class="form-control" name="img" placeholder="Link da imagem"
+                        value="{{giftcard.img}}">
+                </div>
+                <button type="submit" class="btn btn-primary">Editar</button>
+            </form>
+        </div>
     </main>
     <footer>
         <div class="footergira">
             <a href="/">
                 <div className='footerlogo'>
-                     <img src="/home/img/Logo.png" width="110"/>
+                    <img src="/home/img/Logo.png" width="110" />
                 </div>
             </a>
             <div className='redesocias'>

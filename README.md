@@ -1,7 +1,7 @@
 
 # M5 - Infância Girassol - Um site para crianças
 <div align="center" style="display: inline_block">
-<img src="https://user-images.githubusercontent.com/113939119/223291912-cd6a29b9-3e9c-4a3f-afe8-0ebe2ba7468d.png](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpapic-br.com%2Fconjunto-de-brinquedos&psig=AOvVaw0UQuMAIpUDHZ_QzggJhRoV&ust=1678294740761000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCICHpaKlyv0CFQAAAAAdAAAAABAD" alt="footer" width="550" height="300">
+<img src="fotosprojeto/headerfooter.jpg" alt="funcionamento" alt="header" width="550" height="300">
 
 # Back-end do projeto - Trabalho Módulo 5
 
@@ -89,5 +89,5 @@ npm i nodemon
    ❎ XAMPP
    ❎ Bootsrap
 
-<img src="https://user-images.githubusercontent.com/113939119/223291912-cd6a29b9-3e9c-4a3f-afe8-0ebe2ba7468d.png" alt="footer" width="550" height="300">
+<img src="fotosprojeto/headerfooter.jpg" alt="funcionamento" alt="header" width="550" height="300">
 </div>

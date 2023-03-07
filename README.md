@@ -70,7 +70,7 @@ npm i nodemon
 ---
 
 # Screenshot do funcionamento
-<img src="https://user-images.githubusercontent.com/112717111/223527280-26ed08ff-f433-4b68-9563-5a3ac06f9864.png" alt="funcionamento" width="1200" height="1200">
+<img src="https://user-images.githubusercontent.com/112717111/223527280-26ed08ff-f433-4b68-9563-5a3ac06f9864.png" alt="funcionamento" width="800" height="800">
 
 
 ---

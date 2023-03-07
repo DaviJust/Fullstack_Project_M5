@@ -82,7 +82,7 @@ npm i nodemon
 
 ---
 
-## Ferramentas utilizadas no projeto
+# Ferramentas utilizadas no projeto
 <img src="https://user-images.githubusercontent.com/112717111/223501347-0a404ef3-9f51-41d4-a012-09d3853d4f8c.png" alt="funcionamento" width="24" height="24">
 <img src="https://user-images.githubusercontent.com/112717111/223501352-f9579caa-3ce1-44c4-b1f7-e6f3193d4c79.png" alt="funcionamento" width="24" height="24">
 <img src="https://user-images.githubusercontent.com/112717111/223501356-97ff6e13-4b38-42d3-99f5-72035fa137f5.png" alt="funcionamento" width="24" height="24">

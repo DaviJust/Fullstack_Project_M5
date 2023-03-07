@@ -3,7 +3,7 @@
    
 <div align="center" style="display: inline_block">
 <img src="https://user-images.githubusercontent.com/112717111/223495747-f1decb8a-c77e-4160-b218-98dcbadda909.jpg" alt="funcionamento" alt="header" width="550" height="300">
-<i><em><small>Viver a infância para Ser adulto </i></em></small>
+   <p><i><em><small>Viver a infância para Ser adulto </i></em></small></p>
 
 # Back-end do projeto - Trabalho Módulo 5
 

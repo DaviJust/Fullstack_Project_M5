@@ -57,22 +57,39 @@
         <form action="/funcionario/updatefuncionario" method="post">
             <div class="form-control">
                 <input type="hidden" name="cpf" value="{{editfuncionario.cpf}}">
-                <label for="nome">Nome:</label>
-                <input type="text" name="nome" placeholder="Digite o nome do funcionario">
-                value="{{editfuncionario.nome}}"
-            </div>
 
-            <div class="form-control">
-                <label for="cargo">Cargo:</label>
-                <input type="text" name="cargo" placeholder="Digito o cargo" value="{{editfuncionario.cargo}}">
-            </div>
+                <div class="mb-3">
+                    <label class="form-label" for="nome">Nome</label>
+                    <div class="input-group">
+                        <input class="form-control" type="text" name="nome" placeholder="Digite aqui o nome do empresa"
+                            value="{{editfuncionario.nome}}">
+                    </div>
+                </div>
 
-            <div class="form-control">
-                <label for="idade">Idade:</label>
-                <input type="text" name="idade" placeholder="Digite a idade" value="{{editfuncionario.idade}}">
-            </div>
-            <input type="submit" value="Editar">
+
+
+                <div class="mb-3">
+                    <label class="form-label" for="nome">Cargo</label>
+                    <div class="input-group">
+                        <input class="form-control" type="text" name="cargo" placeholder="Digito o cargo" value="{{editfuncionario.cargo}}">
+
+                    </div>
+                </div>
+
+
+                <div class="mb-3">
+                    <label class="form-label" for="idade">Idade</label>
+                    <div class="input-group">
+                        <input class="form-control" type="text" name="idade" placeholder="Digite a idade" value="{{editfuncionario.idade}}">
+
+                    </div>
+                </div>
+
+
+                <input  type="Submit" class="btnspace btn btn-primary" value="Editar">
+
         </form>
+
     </main>
     <footer>
         <div class="footergira">

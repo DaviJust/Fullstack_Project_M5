@@ -62,8 +62,10 @@
         </nav>
     </header>
     <main>
-        <a href="/listadefuncionarios"> Funcionarios Cadastrados</a>
-
+        
+   <div id="btnaddprodutos">
+            <a href="/listadefuncionarios"><button>Funcionarios</button></a>
+        </div>
         <body class="bg-light">
 
             <div class="container">
@@ -73,7 +75,7 @@
                 </div>
                 <form action="funcionario/addfuncionario" method="POST">
                     <div class="mb-3">
-                        <label class="form-label" for="cpf">CPF: </label>
+                        <label class="form-label" type="number" for="cpf">CPF: </label>
                         <div class="input-group">
 
                             <input type="text" class="form-control" name="cpf" placeholder="Digite o CPF">

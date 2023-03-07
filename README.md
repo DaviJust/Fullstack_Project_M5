@@ -18,7 +18,7 @@
 <hr>
 <p>Esses são os requísitos do trabalho, logo as ferramentas, técnicas que usamos para trabalhar</p>
 <ul>
-<li>CRUD</li>
+<li>✅ CRUD</li>
 <li>✅ Banco de dados</li>
 <li>✅ Usar Express, handlebars(view)</li>
 

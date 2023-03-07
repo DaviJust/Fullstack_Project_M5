@@ -26,7 +26,7 @@
   <header>
     <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #f9ce07;">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/"><img src="" width="50"></a>
+        <a class="navbar-brand" href="/"><img src="/src/logo.png" width="115"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
           aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -73,13 +73,11 @@
     <main role="main" class="container">
       <div>
 
-
-
+{{#each listardados}}
         <div class="my-3 p-3 bg-white rounded box-shadow">
           <h6 class="border-bottom border-gray pb-2 mb-0">Empresas Cadastradas</h6>
-
           <div class="mb-3">
-            <label class="form-label">CPF: {{CPF}}</label>
+            <label class="form-label">CPF: {{cpf}}</label>
           </div>
           <div class="mb-3">
             <label class="form-label">Nome: {{nome}}</label>
@@ -87,15 +85,13 @@
           <div class="mb-3">
             <label class="form-label">Cargo: {{cargo}}</label>
           </div>
-          <div class="mb-3">Idade: {{Idade}}</label>
+          <div class="mb-3">Idade: {{idade}}</label>
           </div>
-
-          <a class="centerIcon" href="/funcionario/edit/{{listardados.cpf}}"> <img src="/empresa/img/pencil-square.svg"
+          <a class="centerIcon" href="/funcionario/editar/{{cpf}}"> <img src="/empresa/img/pencil-square.svg"
               alt=""> </a>
-
-          <a href="/funcionario/remove/{{listardados.cpf}}"> <img src="/empresa/img/x-square.svg" alt=""></a>
-
+          <a href="/funcionario/remove/{{cpf}}"> <img src="/empresa/img/x-square.svg" alt=""></a>
         </div>
+        {{/each}}
     </main>
 
   </div>
@@ -104,7 +100,7 @@
     <div class="footergira">
       <a href="/">
         <div className='footerlogo'>
-           <img src="/home/img/Logo.png" width="110"/>
+           <img src="/src/logo.png" width="150"/>
         </div>
       </a>
       <div className='redesocias'>

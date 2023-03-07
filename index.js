@@ -246,7 +246,7 @@ app.get("/funcionario/:cpf", (req, res) => {
     const listar = data;
 
     console.log(listar);
-    res.render("funcionario", { layout: false, listar });
+    res.render("funcionariocpf", { layout: false, listar });
   });
 });
 
@@ -804,7 +804,7 @@ app.get("/empresa/remove/:cnpj", (req, res) => {
 // Conexão com DB no mysql
 const conn = mysql.createConnection({
   host: "127.0.0.1",
-  port: "3306",
+  port: "3307",
   user: "root",
   password: "",
   database: "infanciagirassol",

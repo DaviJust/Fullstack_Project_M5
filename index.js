@@ -364,9 +364,9 @@ app.get("/catalogojogosdemesa", (req, res) => {
 
 // Função de buscar, que leva para o buscarjogodemesa.handlebars
 app.post("/buscar/jogosdemesa/", (req, res) => {
-  const id = req.body.id;
+  const { busca } = req.body;
 
-  const sql = `SELECT * FROM jogodemesa WHERE id = ${id}`;
+  const sql = `SELECT * FROM jogodemesa WHERE id = '${busca}' OR nome LIKE '%${busca}%'`;
 
   conn.query(sql, function (err, data) {
     if (err) {

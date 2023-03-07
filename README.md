@@ -66,7 +66,7 @@ npm i nodemon
 
 # Esquema de funcionamento (Fluxograma)
 <img src="https://user-images.githubusercontent.com/113939119/223291917-19c72da8-5724-4ac4-8398-8b86763aed37.jpg" alt="fluxograma" width="950" height="487">
-
+   <p><i><em><small>A pessoa precisa ser associado para poder cadastrar, vender seu brinquedo, jogo de mesa, action figure, após isso é necessário ter o link da foto do produto e entrar</i></em></small></p>
 ---
 
 # Screenshot do funcionamento

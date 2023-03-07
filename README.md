@@ -73,7 +73,13 @@ npm i nodemon
 <img src="https://user-images.githubusercontent.com/112717111/223527280-26ed08ff-f433-4b68-9563-5a3ac06f9864.png" alt="funcionamento" width="600" height="600">
 <img src="https://user-images.githubusercontent.com/112717111/223533191-7462cdf7-1a6b-4a96-9188-ffbb37508426.png" alt="funcionamento" width="600" height="600">
 
-   
+```css
+.container{
+   display: flex;
+   flex-direction: row;  
+}
+```
+
 
 ---
 

@@ -56,51 +56,46 @@
             </li>
           </ul>
           <form class="d-flex" action="/buscar/funcionario/" method="post">
-            <input class="form-control me-2" type="search" name="busca" id="busca">
+            <input class="form-control me-2" type="search" name="cpf" id="cpf">
             <button class="btn btn-outline-success" type="submit">Buscar</button>
           </form>
         </div>
       </div>
     </nav>
   </header>
+  <main role="main" class="container"></main>
   <div class="container">
     <div class="py-5 text-center">
-
     </div>
     <img class="d-block mx-auto mb-4" src="/empresa/img/girassol.png" alt="" width="72" height="72">
     <h2>Associados</h2>
-
-    <main role="main" class="container">
-      <div>
-
-{{#each listardados}}
-        <div class="my-3 p-3 bg-white rounded box-shadow">
-          <h6 class="border-bottom border-gray pb-2 mb-0">Funcionário</h6>
-          <div class="mb-3">
-            <label class="form-label">CPF: {{cpf}}</label>
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Nome: {{nome}}</label>
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Cargo: {{cargo}}</label>
-          </div>
-          <div class="mb-3">Idade: {{idade}}</label>
-          </div>
-          <a class="centerIcon" href="/funcionario/editar/{{cpf}}"> <img src="/empresa/img/pencil-square.svg"
-              alt=""> </a>
-          <a href="/funcionario/remove/{{cpf}}"> <img src="/empresa/img/x-square.svg" alt=""></a>
+    <div>
+      {{#each listardados}}
+      <div class="my-3 p-3 bg-white rounded box-shadow">
+        <h6 class="border-bottom border-gray pb-2 mb-0">Funcionário</h6>
+        <div class="mb-3">
+          <label class="form-label">CPF: {{cpf}}</label>
         </div>
-        {{/each}}
-    </main>
-
+        <div class="mb-3">
+          <label class="form-label">Nome: {{nome}}</label>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Cargo: {{cargo}}</label>
+        </div>
+        <div class="mb-3">Idade: {{idade}}</label>
+        </div>
+        <a class="centerIcon" href="/funcionario/editar/{{cpf}}"> <img src="/empresa/img/pencil-square.svg" alt=""> </a>
+        <a href="/funcionario/remove/{{cpf}}"> <img src="/empresa/img/x-square.svg" alt=""></a>
+      </div>
+      {{/each}}
+    </div>
   </div>
-
+  </main>
   <footer>
     <div class="footergira">
       <a href="/">
         <div className='footerlogo'>
-           <img src="/src/logo.png" width="150"/>
+          <img src="/src/logo.png" width="150" />
         </div>
       </a>
       <div className='redesocias'>
@@ -111,7 +106,7 @@
         <a href="https://www.instagram.com">
           <p>Instagram</p>
         </a>
-        <a href="https://twitter.co ">
+        <a href="https://www.twitter.com">
           <p>Twitter</p>
         </a>
       </div>

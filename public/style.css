@@ -238,6 +238,11 @@ nav input {
   justify-content: space-around;
 }
 
+/* configuracoes empresacnpj */
+.maincnpj{
+padding-bottom: 148px;
+}
+
 
 ::-webkit-scrollbar {
   width: 5px;

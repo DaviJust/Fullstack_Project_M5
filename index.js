@@ -698,7 +698,7 @@ app.get("/cadastroempresa", (req, res) => {
 app.post("/buscar/empresa/", (req, res) => {
   const { busca } = req.body;
 
-  const sql = `SELECT * FROM empresa WHERE cnpj = '${busca}' OR nome LIKE '%${busca}%'`;
+  const sql = `SELECT * FROM empresa WHERE cnpj = '${busca}' OR nome LIKE '%${busca}%'`
 
   conn.query(sql, function (err, data) {
     if (err) {
@@ -804,7 +804,7 @@ app.get("/empresa/remove/:cnpj", (req, res) => {
 // Conexão com DB no mysql
 const conn = mysql.createConnection({
   host: "127.0.0.1",
-  port: "3306",
+  port: "3307",
   user: "root",
   password: "",
   database: "infanciagirassol",

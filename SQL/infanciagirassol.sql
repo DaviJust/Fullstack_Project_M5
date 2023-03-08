@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 07-Mar-2023 às 05:50
+-- Tempo de geração: 08-Mar-2023 às 20:18
 -- Versão do servidor: 10.4.27-MariaDB
 -- versão do PHP: 8.2.0
 
@@ -96,6 +96,16 @@ CREATE TABLE `empresa` (
   `telefone` varchar(15) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Extraindo dados da tabela `empresa`
+--
+
+INSERT INTO `empresa` (`cnpj`, `nome`, `email`, `local`, `telefone`) VALUES
+('02442833000138', 'Eduarda e Vinicius Telecomunicações Ltda', 'contato@eduardaeviniciustelecomunicacoesltda.com.b', 'Rua Dane Conceição 421 -Limoeiro Guapimirim', '2129160730'),
+('22067427000140', 'Rafael e Heloise Tools Ltda', 'representantes@rafaeleheloisegraficaltda.com.br', 'Praça Padre  Miguel 904 Realengo -Rio de Janeiro', '2138782916'),
+('35597672000100', 'Hadassa e Ayla Brinquedos Ltda', 'representantes@hadassaeaylaalimentosltda.com.br', 'Rua Diocleciano Feital 708 -Centro de Japeri Japeri', '2139613611'),
+('95400957000131', 'Maitê e Alana Brincalhonas Ltda', 'atendimento@maiteealanaferragensltda.com.br', 'Rua Torres Gonçalves 874 Areia Branca -Belford Roxo', '2128304196');
+
 -- --------------------------------------------------------
 
 --
@@ -114,9 +124,9 @@ CREATE TABLE `funcionario` (
 --
 
 INSERT INTO `funcionario` (`cpf`, `nome`, `cargo`, `idade`) VALUES
-('19287831556', 'Yago Marcelo Leandro Nogueira', 'Gerente', 41),
-('26315989381', 'Valentina Isadora Hadassa Araújo', 'Coordenador', 45),
-('50261000829', 'Esther Isabelle Nunes', 'Assistente', 36),
+('02486726063', 'Lucas lima', 'Faxineiro', 49),
+('07982057098', 'Diego Carlos Tiago Mendes', 'Atendente', 24),
+('67040335050', 'Pedro Paulo Pinto', 'Assistente de RH', 49),
 ('92015496440', 'Sérgio Isaac Vitor Barros', 'Estoquista', 58);
 
 -- --------------------------------------------------------

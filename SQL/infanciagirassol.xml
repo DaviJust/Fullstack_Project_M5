@@ -5,7 +5,7 @@
 - https://www.phpmyadmin.net
 -
 - Host: 127.0.0.1
-- Tempo de geração: 07-Mar-2023 às 05:50
+- Tempo de geração: 08-Mar-2023 às 20:18
 - Versão do servidor: 10.4.27-MariaDB
 - versão do PHP: 8.2.0
 -->
@@ -237,24 +237,52 @@
             <column name="img">https://m.media-amazon.com/images/I/71hXkmlQrML._AC_SL1500_.jpg</column>
         </table>
         <!-- Tabela empresa -->
+        <table name="empresa">
+            <column name="cnpj">02442833000138</column>
+            <column name="nome">Eduarda e Vinicius Telecomunicações Ltda</column>
+            <column name="email">contato@eduardaeviniciustelecomunicacoesltda.com.b</column>
+            <column name="local">Rua Dane Conceição 421 -Limoeiro Guapimirim</column>
+            <column name="telefone">2129160730</column>
+        </table>
+        <table name="empresa">
+            <column name="cnpj">22067427000140</column>
+            <column name="nome">Rafael e Heloise Tools Ltda</column>
+            <column name="email">representantes@rafaeleheloisegraficaltda.com.br</column>
+            <column name="local">Praça Padre  Miguel 904 Realengo -Rio de Janeiro</column>
+            <column name="telefone">2138782916</column>
+        </table>
+        <table name="empresa">
+            <column name="cnpj">35597672000100</column>
+            <column name="nome">Hadassa e Ayla Brinquedos Ltda</column>
+            <column name="email">representantes@hadassaeaylaalimentosltda.com.br</column>
+            <column name="local">Rua Diocleciano Feital 708 -Centro de Japeri Japeri</column>
+            <column name="telefone">2139613611</column>
+        </table>
+        <table name="empresa">
+            <column name="cnpj">95400957000131</column>
+            <column name="nome">Maitê e Alana Brincalhonas Ltda</column>
+            <column name="email">atendimento@maiteealanaferragensltda.com.br</column>
+            <column name="local">Rua Torres Gonçalves 874 Areia Branca -Belford Roxo</column>
+            <column name="telefone">2128304196</column>
+        </table>
         <!-- Tabela funcionario -->
         <table name="funcionario">
-            <column name="cpf">19287831556</column>
-            <column name="nome">Yago Marcelo Leandro Nogueira</column>
-            <column name="cargo">Gerente</column>
-            <column name="idade">41</column>
+            <column name="cpf">02486726063</column>
+            <column name="nome">Lucas lima</column>
+            <column name="cargo">Faxineiro</column>
+            <column name="idade">49</column>
         </table>
         <table name="funcionario">
-            <column name="cpf">26315989381</column>
-            <column name="nome">Valentina Isadora Hadassa Araújo</column>
-            <column name="cargo">Coordenador</column>
-            <column name="idade">45</column>
+            <column name="cpf">07982057098</column>
+            <column name="nome">Diego Carlos Tiago Mendes</column>
+            <column name="cargo">Atendente</column>
+            <column name="idade">24</column>
         </table>
         <table name="funcionario">
-            <column name="cpf">50261000829</column>
-            <column name="nome">Esther Isabelle Nunes</column>
-            <column name="cargo">Assistente</column>
-            <column name="idade">36</column>
+            <column name="cpf">67040335050</column>
+            <column name="nome">Pedro Paulo Pinto</column>
+            <column name="cargo">Assistente de RH</column>
+            <column name="idade">49</column>
         </table>
         <table name="funcionario">
             <column name="cpf">92015496440</column>

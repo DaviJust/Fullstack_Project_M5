@@ -1,5 +1,5 @@
 
-# M5 - Infância Girassol - Um site para criança
+# M5 - Infância Girassol - Um site para crianças
    
 <div align="center" style="display: inline_block">
 <img src="https://user-images.githubusercontent.com/112717111/223495747-f1decb8a-c77e-4160-b218-98dcbadda909.jpg" alt="funcionamento" alt="header" width="550" height="300">

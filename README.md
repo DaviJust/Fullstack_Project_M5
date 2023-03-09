@@ -57,8 +57,8 @@ npm i handlebars
 npm i nodemon
 ```
    
-<li>4. Importe um dos arquivos da pasta SQL para o xampp, através do painel de administrador do xampp</li>
-<li>5. No Visual Studio Code coloque o comando npm start no terminal</li>
+<li>5. Importe um dos arquivos da pasta SQL para o xampp, através do painel de administrador do xampp</li>
+<li>6. No Visual Studio Code coloque o comando npm start no terminal</li>
 </ul>
 </p>
 

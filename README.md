@@ -48,7 +48,7 @@
 <li>2. Instale o xampp.
 </li>
 <li>3. Baixe o projeto</li>
-<li>4. Entre no projeto pelo Visual Studio Code, abra o terminal e baixe as dependências usando o código: </li>
+<li>4. Entre no projeto pelo Visual Studio Code, abra o terminal e baixe as dependências usando os códigos: </li>
 
 ```
 npm i express
